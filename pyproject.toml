@@ -139,7 +139,7 @@ filterwarnings = [
     "error",
     # TODO: Remove these after replacing torch.jit with torch.compile or torch.export.
     'ignore:`torch\.jit\.(trace|trace_method)` is deprecated\..*:FutureWarning:torch\.jit\._trace',
-    'ignore:`torch\.jit\.save` is deprecated\..*:FutureWarning:torch\.jit\._serialization',
+    'ignore:`torch\.jit\.(save|load)` is deprecated\..*:FutureWarning:torch\.jit\._serialization',
     "ignore:numpy.ufunc size changed:RuntimeWarning",
     "ignore:numpy.dtype size changed:RuntimeWarning",
     "ignore:Mixed memory format inputs detected:UserWarning",
